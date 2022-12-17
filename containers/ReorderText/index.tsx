@@ -34,10 +34,10 @@ export const ReorderTextContainer = () => {
   return (
     <div>
       <h1>Reorder Text</h1>
-      <h2>Type any text and reorder it to see how it looks.</h2>
-      <input type="text" name="url" value={text} onChange={onChange} />
+      <label htmlFor="textReorder">Type any text and reorder it to see how it looks.</label>
+      <input id="textReorder" type="text" name="text" value={text} onChange={onChange} />
       <button type="button" onClick={() => onSubmit(text)} disabled={isDisabled()}>
-        Create
+        Reorder
       </button>
       <button type="button" onClick={onClear} disabled={isDisabled()}>
         Clear
