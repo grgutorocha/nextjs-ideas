@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import ReorderText from './index';
+import ReorderText from '../pages/reorder-text/index';
 import '@testing-library/jest-dom';
 
 const headingName = 'Reorder Text';
