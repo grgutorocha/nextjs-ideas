@@ -1,6 +1,6 @@
-This is a simple repository to make some experiments with the purpose of learning Next.js.
+This is a simple repository to make some experiments to learn Next.js.
 
-Check it out the production build: [https://nextjs-ideas.vercel.app](https://nextjs-ideas.vercel.app)
+Check out the production build: [https://nextjs-ideas.vercel.app](https://nextjs-ideas.vercel.app)
 
 ## Tech Stack
 
@@ -8,6 +8,17 @@ Check it out the production build: [https://nextjs-ideas.vercel.app](https://nex
 - React 18
 - Typescript
 - Vercel for deployment
+- ESLint, Prettier
+
+## Code Quality
+
+If VSCode is your standard IDE, you can integrate Prettier to help you watch the inconsistencies. To do that, go to Settings and search for `Default Formatter`. In the droplist, choose the `Prettier - Code formatter` option. This configuration will help you to keep the code quality.
+
+Another option to check the code quality is to run the command below. In case of any discrepancies, some warning/error messages will be displayed on the terminal.
+
+```bash
+npm run lint
+```
 
 ## Getting Started
 
@@ -15,8 +26,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
