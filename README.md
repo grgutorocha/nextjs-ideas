@@ -30,6 +30,13 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Pages
+The idea with this repository is to create a simple application by page. In this section, you will know all the pages we have in this application.
+
+Route: `/reorder-text`
+Description: This page is a simple React static application to revert a given text.
+Tech stack: React, useState, useCallback, Typescript
+
 ## Learn More About Next.js
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
