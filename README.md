@@ -9,6 +9,9 @@ Check out the production build: [https://nextjs-ideas.vercel.app](https://nextjs
 - Typescript
 - Vercel for deployment
 - ESLint, Prettier
+- Jest, React Testing Library
+- MSW: Mock Service Worker
+- REST API with axios
 
 ## Code Quality
 
@@ -22,7 +25,14 @@ npm run lint
 
 ## Getting Started
 
-First, run the development server:
+First, create a `.env.local` file with the following content:
+
+```bash
+NEXT_PUBLIC_API_URL=http://localhost:4200
+NEXT_PUBLIC_API_MOCKING=enabled
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -30,12 +40,38 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+To test the application, run the command:
+
+```bash
+npm run test
+```
+
 ## Pages
 The idea with this repository is to create a simple application by page. In this section, you will know all the pages we have in this application.
 
 Route: `/reorder-text`
 Description: This page is a simple React static application to revert a given text.
 Tech stack: React, useState, useCallback, Typescript
+
+Route: `/blog`
+Description: List of articles.
+Tech stack: NextJS, getServerSideProps, REST API
+
+Route: `/blog/about`
+Description: This is a simple page.
+Tech stack: NextJS, getStaticProps, REST API
+
+Route: `/blog/news/slug`
+Description: This is a simple article.
+Tech stack: NextJS, getStaticProps, getStaticPaths, REST API
+
+## Next steps
+- Absolute imports
+- Add navigation to the Blog
+- Add tests to the Blog
+- MSW Mock documentation
+- Tests documentation
+- Create global types
 
 ## Learn More About Next.js
 
